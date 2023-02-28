@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    // console.table(window.console);
+
+    const itsMe={
+      name:"hanyujin",
+      age:20,
+      home:"home",
+      hosil:"305",
+      sentence:"저는"+this.name+"입니다",
+      test:`저는  ${this.name}입니다`, 
+    
+      adult:function(){
+        if(this.age>=20){
+          console.log("나는 성인이야");
+        }else{
+          console.log("나는 아직 성인이 아니야");
+        }
+      },  // 닉네임 함수만들기 this.name
+      nickname:function(){
+      this.name="미남"
+    }
+    };
+    console.table(itsMe);
+    itsMe.nickname();
+    console.table(itsMe)
+
+
+    
+    
+
+  </script>
+</body>
+</html>
